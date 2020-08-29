@@ -2,37 +2,114 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.SpaceX-Top-Label {
+  padding-left: 0.8rem;
+  margin-top: 0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Nav-Bar-Headings {
+  text-align: center;
+  border-bottom: 1px solid black;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Launch-Year-Button-Wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 0.3rem;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.Launch-Year-Button {
+  background-color: lightgreen;
+  border: 0px solid;
+  padding: 0.4rem 1.5rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  min-width: 4.9rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Launch-Year-Button:hover {
+  background-color: green;
+}
+
+.Rocket-Image-Wrapper {
+  background-color: lightgray;
+  text-align: center;
+}
+
+.Rocket-Image {
+  height: 60%;
+  width: 60%;
+}
+
+.Card-Label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  font-size: medium;
+}
+
+@media only screen and (max-width: 699px) {
+  .Flex-Wrapper {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 700px) {
+.Flex-Wrapper {
+  flex: 1 1 33.33%;
+    max-width: 33%;
+}
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
+.Flex-Wrapper {
+    flex: 1 1 20%;
+    max-width: 20%;
   }
+}
+
+@media only screen and (max-width: 500px) {
+.Nav-Wrapper {
+  display: flex;
+  flex-wrap: wrap;
+ }  
+}
+
+@media only screen and (min-width: 501px) {
+  .Nav-Wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+  }  
+}
+
+.NavBar {
+  padding: 0.2rem 0.4rem 1rem 0.4rem;
+  background-color: white;
+  margin: 0.2rem;
+  height: 60%;
+}
+
+.Card-Parent-Wrapper {
+  display: flex;
+  flex-flow: wrap;
+  width: 100%;
+}
+
+.Card-Wrapper {
+  background-color: white;
+  margin: 0.2rem;
+  padding: 0.5rem;
+}
+
+.Circular-Progress {
+  top: 50%;
+  left: 50%;
+  position: relative;
+}
+
+.Footer {
+  text-align: center;
+   padding: 2rem;
 }
