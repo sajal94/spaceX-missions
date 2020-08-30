@@ -16,4 +16,6 @@ To run this project use following commands:
 use npm test command to run test cases.
 use npm run build to build the project.
 
+As there was no property corresponding to sucessful_landing in api response, I'm using successful_launch property for that.
+
 
